@@ -15,13 +15,9 @@ import 'package:vector_graphics/vector_graphics.dart' as _vg;
 class $AssetsIconsGen {
   const $AssetsIconsGen();
 
-  /// File path: assets/icons/add_icon_one.svg
-  SvgGenImage get addIconOne =>
-      const SvgGenImage('assets/icons/add_icon_one.svg');
-
-  /// File path: assets/icons/add_icon_two.svg
-  SvgGenImage get addIconTwo =>
-      const SvgGenImage('assets/icons/add_icon_two.svg');
+  /// File path: assets/icons/app_back_icon.svg
+  SvgGenImage get appBackIcon =>
+      const SvgGenImage('assets/icons/app_back_icon.svg');
 
   /// File path: assets/icons/apple_logo.svg
   SvgGenImage get appleLogo => const SvgGenImage('assets/icons/apple_logo.svg');
@@ -227,8 +223,7 @@ class $AssetsIconsGen {
 
   /// List of all assets
   List<dynamic> get values => [
-        addIconOne,
-        addIconTwo,
+        appBackIcon,
         appleLogo,
         appointTimeIcon,
         arrowDown,

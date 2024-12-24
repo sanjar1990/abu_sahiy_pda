@@ -21,6 +21,12 @@ abstract class _$AppRouter extends RootStackRouter {
         child: const OnBoardingPage(),
       );
     },
+    SearchBranchRoute.name: (routeData) {
+      return AutoRoutePage<dynamic>(
+        routeData: routeData,
+        child: const SearchBranchPage(),
+      );
+    },
     SplashRoute.name: (routeData) {
       return AutoRoutePage<dynamic>(
         routeData: routeData,
@@ -46,6 +52,20 @@ class OnBoardingRoute extends PageRouteInfo<void> {
         );
 
   static const String name = 'OnBoardingRoute';
+
+  static const PageInfo<void> page = PageInfo<void>(name);
+}
+
+/// generated route for
+/// [SearchBranchPage]
+class SearchBranchRoute extends PageRouteInfo<void> {
+  const SearchBranchRoute({List<PageRouteInfo>? children})
+      : super(
+          SearchBranchRoute.name,
+          initialChildren: children,
+        );
+
+  static const String name = 'SearchBranchRoute';
 
   static const PageInfo<void> page = PageInfo<void>(name);
 }

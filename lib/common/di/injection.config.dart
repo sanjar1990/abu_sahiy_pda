@@ -35,6 +35,8 @@ import 'package:abu_sahiy_pdi/domain/repo/fill_profile_info_repo.dart' as _i775;
 import 'package:abu_sahiy_pdi/domain/repo/recover_repo.dart' as _i461;
 import 'package:abu_sahiy_pdi/domain/repo/sign_up_repo.dart' as _i189;
 import 'package:abu_sahiy_pdi/domain/repo/start_repo.dart' as _i8;
+import 'package:abu_sahiy_pdi/features/search_branch/cubit/search_branch_cubit.dart'
+    as _i900;
 import 'package:abu_sahiy_pdi/features/start/onboarding/cubit/on_boarding_cubit.dart'
     as _i40;
 import 'package:abu_sahiy_pdi/features/start/splash/cubit/splash_cubit.dart'
@@ -60,6 +62,7 @@ extension GetItInjectableX on _i174.GetIt {
     );
     final appModule = _$AppModule();
     final networkModule = _$NetworkModule();
+    gh.factory<_i900.SearchBranchCubit>(() => _i900.SearchBranchCubit());
     gh.factory<_i576.TestCubit>(() => _i576.TestCubit());
     gh.lazySingleton<_i974.Logger>(() => appModule.logger);
     await gh.lazySingletonAsync<_i524.Storage>(

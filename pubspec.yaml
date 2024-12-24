@@ -70,6 +70,7 @@ dependencies:
   another_carousel_pro: ^1.0.2
   flutter_svg_provider: ^1.0.7
   uuid: ^4.4.2
+  get_it: ^8.0.3
 
 dev_dependencies:
   flutter_test:
@@ -113,7 +114,7 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
   fonts:
-    - family: Urbanist
+    - family: Gabarito
       fonts:
         - asset: assets/fonts/Urbanist-Italic-VariableFont_wght.ttf
         - asset: assets/fonts/Urbanist-VariableFont_wght.ttf

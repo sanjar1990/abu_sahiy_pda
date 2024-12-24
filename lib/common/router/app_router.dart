@@ -1,3 +1,4 @@
+import 'package:abu_sahiy_pdi/features/search_branch/pages/search_branch_page.dart';
 import 'package:abu_sahiy_pdi/features/start/onboarding/onboarding.dart';
 import 'package:abu_sahiy_pdi/features/start/splash/splash_page.dart';
 import 'package:abu_sahiy_pdi/features/start/test/test_one_page.dart';
@@ -12,8 +13,9 @@ part 'app_router.gr.dart';
 class AppRouter extends _$AppRouter {
   @override
   final List<AutoRoute> routes = [
-    AutoRoute(page: SplashRoute.page,initial: false, path: '/splash'),
-    AutoRoute(page: TestOneRoute.page, initial: true, path: '/test'),
+    AutoRoute(page: SplashRoute.page, path: '/splash'),
+    AutoRoute(page: TestOneRoute.page,initial: false,  path: '/test'),
+   AutoRoute(page: SearchBranchRoute.page, initial: true, path: '/search_branch'),
 
   ];
 }

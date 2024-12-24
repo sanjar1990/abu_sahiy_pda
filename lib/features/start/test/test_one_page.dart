@@ -8,7 +8,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 @RoutePage()
-class TestOnePage extends BasePage<TestCubit,TestBuildable,TestListenable> {
+class TestOnePage extends BasePage<TestCubit,
+    TestBuildable,TestListenable> {
   const TestOnePage({super.key});
   @override
   void listener(BuildContext context, TestListenable state) {

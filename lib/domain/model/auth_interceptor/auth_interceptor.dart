@@ -15,9 +15,7 @@ class AuthInterceptor extends QueuedInterceptor {
       RequestInterceptorHandler handler,
       ) {
     final String? token = _storage.token.call();
-    if (token != null) {
-      options.headers.addAll({'Authorization': 'Bearer $token'});
-    }
+      options.headers.addAll({ 'Authorization': 'X-ABU-PDA_m9c283ytcn-27ymcpqcustomT'});
     handler.next(options);
   }
 }

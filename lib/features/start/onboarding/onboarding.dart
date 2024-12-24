@@ -80,8 +80,7 @@ class OnBoardingPage extends BasePage<OnBoardingCubit, OnBoardingBuildable,
                     // context.router.replace(const AuthMainRoute());
                   }
                 },
-                color: ResColors.primaryColor,
-                text: list[state.page].buttonName,
+                         text: list[state.page].buttonName,
               ),
             ),
           ),

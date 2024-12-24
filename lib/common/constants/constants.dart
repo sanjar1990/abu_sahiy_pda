@@ -1,6 +1,6 @@
 import 'dart:ui';
 
 class Constants{
-static const baseUrl = 'http://bumen.alimardondev.uz/api/';
+static const baseUrl = 'https://api.abusahiy.uz/api/admin/pda/';
 }
 
